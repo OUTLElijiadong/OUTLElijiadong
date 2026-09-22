@@ -1,0 +1,20 @@
+# ── Conventional Commits 提交模板 ──
+# 启用：git config commit.template .gitmessage
+#
+# 格式：<type>: <subject>
+#
+# ── 本仓库常用 type ──
+#   docs    内容修订（README 文案、项目列表、奖项）
+#   fix     修正错误（死链、错别字、错误信息）
+#   chore   配置调整（CI、模板、依赖）
+#   feat    新增板块
+#   revert  回滚
+#
+# ── 规则 ──
+#   - subject 用祈使句，不以大写字母开头，结尾不加句号
+#   - 一行说不清就在下方空一行后写正文，每行不超过 72 字符
+#
+# ── 示例 ──
+#   docs: 新增 FlyTrap 项目介绍
+#   fix: 修正项目链接中的用户名拼写
+#   chore(deps): 升级 lycheeverse/lychee-action 到 v2

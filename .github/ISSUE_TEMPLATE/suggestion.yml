@@ -1,0 +1,53 @@
+name: 内容修改建议
+description: 对主页文案、项目列表、奖项或排版提出修改建议
+title: "docs: "
+labels: ["type: documentation", "status: needs-triage"]
+body:
+  - type: dropdown
+    id: section
+    attributes:
+      label: 涉及板块
+      options:
+        - 个人简介
+        - 代表项目
+        - 奖项
+        - 技术方向
+        - 联系方式
+        - 整体排版 / 结构
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前内容
+      description: 把现有文字原样贴上来，方便定位
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议改为
+      description: 你希望改成什么样？
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 修改理由
+      placeholder: 例如：该项目已开源，可补充链接
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 参与方式
+      options:
+        - label: 我愿意提交 PR
+          required: false
+        - label: 仅需维护者处理
+          required: false

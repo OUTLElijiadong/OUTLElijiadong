@@ -15,7 +15,17 @@
 
 | 项目 | 简介 | 技术栈 |
 |---|---|---|
-| [llm-agent-code-review](https://github.com/OUTLEliadiadong/llm-agent-code-review) | 基于大模型智能体的代码审查平台 | FastAPI · Vue 3 · DeepSeek |
-| [fishskin-heritage-website](https://github.com/OUTLEliadiadong/fishskin-heritage-website) | 鱼皮非遗文化展示网站 | HTML · Tailwind CSS |
+| [llm-agent-code-review](https://github.com/OUTLElijiadong/llm-agent-code-review) | 基于大模型智能体的代码审查平台 | FastAPI · Vue 3 · DeepSeek |
+| [fishskin-heritage-website](https://github.com/OUTLElijiadong/fishskin-heritage-website) | 鱼皮非遗文化展示网站 | HTML · Tailwind CSS |
 
 *其余代表项目为私有或内网部署项目。*
+
+---
+
+## 关于本仓库
+
+这是个人主页 README 仓库。内容修改建议走 PR，流程见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+- **许可证**：[MIT](./LICENSE)
+- **变更记录**：[CHANGELOG.md](./CHANGELOG.md)
+- **安全与隐私**：[SECURITY.md](./SECURITY.md)
