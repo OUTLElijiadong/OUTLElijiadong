@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 内容修改建议
+    url: https://github.com/OUTLElijiadong/OUTLEliadiadong/issues/new?template=suggestion.yml
+    about: 对主页文案、项目列表、奖项等内容的修改建议，请使用「内容修改建议」模板。
+  - name: 隐私与安全问题
+    url: https://github.com/OUTLElijiadong/OUTLEliadiadong/security/policy
+    about: 涉及个人信息泄露的问题请勿公开提交，先阅读 SECURITY.md。

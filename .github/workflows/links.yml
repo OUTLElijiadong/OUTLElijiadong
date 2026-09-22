@@ -1,0 +1,38 @@
+name: 外链检查
+
+# 本仓库是纯 Markdown 内容，唯一真正有价值的自动化检查就是「链接有没有失效」。
+# README 里曾出现过整批死链（用户名拼写错误），这个工作流就是为了防止复发。
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "17 3 * * 1"   # 每周一 03:17 UTC，兜底发现外部站点失效
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: links-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lychee:
+    name: 检查 Markdown 链接
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 运行 lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept 200,203,206,429
+            --max-concurrency 8
+            --retry-wait-time 5
+            "**/*.md"
+          fail: true
